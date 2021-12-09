@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <!--Compiled icons-->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!-- Fornt Awsome Icons-->
+   <script src="https://kit.fontawesome.com/f8d4c0b3a2.js" crossorigin="anonymous"></script>
+
+
+  <title>Parallax and Modals</title>
+</head>
+<body class="grey darken-4">
+  <!--  parallax  -->
+ <div class="container">
+  <h1 class="amber-text">Ghibli Studio</h1>
+ </div>
+
+
+
+      <div class="parallax-container">
+      <div class="parallax"><img src="header.jpg"></div>
+    </div>
+    <div class="section white lighten-4">
+    <div class="row container cyan">
+      <h2 class="header pink-text lighten-2">Studio Ghibli</h2>
+      <p class="grey-text text-darken-3 lighten-3">Studio Ghibli Inc. is a Japanese animation film studio headquartered in Koganei, Tokyo. The studio is best known for its animated feature films, and has also produced several short subjects, television commercials, and one television film.</p>
+    </div>
+  </div>
+  <div class="parallax-container">
+    <div class="parallax"><img src="ghibli.jpg"></div>
+  </div>
+<br><br>
+<center>
+<!-- Modals-->
+<div class="container">
+  <h1 class="amber-text">Watch Now!</h1>
+ </div>
+ <!-- Modal Trigger -->
+ <a class="waves-effect waves-light btn modal-trigger" href="#modal1">My Neighbor Totoro</a>
+
+ <!-- Modal Structure -->
+ <div id="modal1" class="modal">
+   <div class="modal-content">
+     <h4 class="blue-text">My Neighbor Totoro</h4>
+     <p>My Neighbor Totoro is a 1988 Japanese animated fantasy film written and directed by Hayao Miyazaki and animated by Studio Ghibli for Tokuma Shoten.</p>
+   </div>
+   <div class="modal-footer">
+     <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+   </div>
+ </div>
+ <br><br>
+<!-- Modals with Fixed Footer -->
+ <!-- Modal Trigger -->
+ <a class="waves-effect waves-light btn modal-trigger" href="#modal2">Ponyo</a>
+
+ <!-- Modal Structure -->
+ <div id="modal2" class="modal modal-fixed-footer">
+   <div class="modal-content">
+     <h4>Ponyo</h4>
+     <p>The film tells the story of Ponyo (Nara), a goldfish who escapes from the ocean and is rescued by a five-year-old human boy, Sōsuke (Doi) after she is washed ashore while trapped in a glass jar. As they bond with each other, the story deals with resolving Ponyo's desire to become a human girl, against the devastating circumstances brought about by her acquisition and use of magic.</p>
+   </div>
+   <div class="modal-footer">
+     <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+   </div>
+ </div>
+<br><br>
+<!-- Bottom Sheet Modals -->
+ <!-- Modal Trigger -->
+ <a class="waves-effect waves-light btn modal-trigger" href="#modal3">Spirited Away</a>
+
+ <!-- Modal Structure -->
+ <div id="modal3" class="modal bottom-sheet">
+   <div class="modal-content">
+     <h4>Spirited Away</h4>
+     <p>Spirited Away tells the story of Chihiro Ogino (Hiiragi), a ten-year-old girl who, while moving to a new neighborhood, enters the world of Kami (spirits of Japanese Shinto folklore).</p>
+   </div>
+   <div class="modal-footer">
+     <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+   </div>
+ </div>
+
+</center>
+
+
+ <!-- Jquery CDN-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script> 
+$(document).ready(function(){
+  $('.parallax').parallax();
+})
+</script>
+<!-- Compiled parallax Script -->
+<script>
+   $('.parallax').parallax('methodName');
+    $('.parallax').parallax('methodName', paramName);
+</script>
+<!-- Compiled Modal Script -->
+<script>
+    $(document).ready(function(){
+    $('.modal').modal();
+  });
+</script>
+</body>
+</html> 
